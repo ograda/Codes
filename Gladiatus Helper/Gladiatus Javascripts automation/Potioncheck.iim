@@ -1,0 +1,5 @@
+﻿VERSION BUILD=7401110 RECORDER=FX
+TAB T=1
+SET !EXTRACT_TEST_POPUP NÃO
+URL GOTO=http://s{{SERVER}}.{{BR}}gladiatus.{{CTR}}/game/index.php?mod=premium&submod=inventory&sh={{HASH}}
+TAG POS={{VARI}} TYPE=DIV ATTR=CLASS:premiumfeature_title&&TXT:* EXTRACT=TXT

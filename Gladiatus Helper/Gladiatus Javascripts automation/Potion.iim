@@ -1,0 +1,4 @@
+﻿VERSION BUILD=7401110 RECORDER=FX
+TAB T=1
+URL GOTO=http://s{{SERVER}}.{{BR}}gladiatus.{{CTR}}/game/index.php?mod=premium&submod=inventory&sh={{HASH}}
+TAG POS={{VARI}}  TYPE=INPUT:BUTTON ATTR=VALUE:*

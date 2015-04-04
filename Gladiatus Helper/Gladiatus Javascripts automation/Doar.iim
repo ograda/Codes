@@ -1,0 +1,10 @@
+﻿VERSION BUILD=7401110 RECORDER=FX
+TAB T=1
+SET !EXTRACT_TEST_POPUP NÃO
+TAG POS=1 TYPE=DIV ATTR=ID:sstat_gold_val EXTRACT=TXT
+SET !VAR1 EVAL({{!EXTRACT}}*1000)
+SET !EXTRACT NULL
+URL GOTO=http://s{{SERVER}}.{{BR}}gladiatus.{{CTR}}/game/index.php?mod=guildBankingHouse&sh={{HASH}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ACTION:index.php?mod=guildBankingHouse&submod=donate&sh=* ATTR=NAME:donation CONTENT={{!VAR1}}
+WAIT SECONDS=1
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:index.php?mod=guildBankingHouse&submod=donate&sh=* ATTR=NAME:doDonation&&VALUE:Doar

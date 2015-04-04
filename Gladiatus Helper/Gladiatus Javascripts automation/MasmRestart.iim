@@ -1,0 +1,6 @@
+﻿VERSION BUILD=7401110 RECORDER=FX
+TAB T=1
+SET !ERRORIGNORE YES
+TAG POS=1 TYPE=A ATTR=CLASS:cooldown_bar_link&&HREF:index.php?mod=dungeon&loc={{LOCAL}}&sh={{HASH}}
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:index.php?mod=dungeon&loc={{LOCAL}}&action=cancelDungeon&sh={{HASHP}} ATTR=VALUE:*
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:index.php?mod=dungeon&loc={{LOCAL}}&sh={{HASH}} ATTR=NAME:dif*&&VALUE:{{TIPO}}

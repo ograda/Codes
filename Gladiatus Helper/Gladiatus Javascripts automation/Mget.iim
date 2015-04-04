@@ -1,0 +1,4 @@
+﻿VERSION BUILD=7401110 RECORDER=FX
+TAB T=1
+SET !TIMEOUT_STEP 2
+TAG POS=1 TYPE=A ATTR=TITLE:Aceitar<SP>missão&&HREF:index.php?mod=quests&submod=startQuest&questPos={{POS}}&sh*

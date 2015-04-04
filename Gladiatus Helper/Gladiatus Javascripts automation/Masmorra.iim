@@ -1,0 +1,8 @@
+﻿VERSION BUILD=7401110 RECORDER=FX
+TAB T=1
+SET !VAR1 EVAL("Math.floor(Math.random()*3 + 2);")
+SET !VAR2 EVAL("Math.floor(Math.random()*3 + 5);")
+TAG POS=1 TYPE=A ATTR=CLASS:cooldown_bar_link&&HREF:index.php?mod=dungeon&loc={{LOCAL}}&sh={{HASH}}&&TXT:
+WAIT SECONDS={{!VAR1}}
+TAG POS={{BIXO}} TYPE=AREA ATTR=HREF:http://s{{SERVER}}.{{BR}}gladiatus.{{CTR}}/game/index.php?mod=dungeon&loc={{LOCAL}}&sh={{HASH}}#
+WAIT SECONDS={{!VAR2}}

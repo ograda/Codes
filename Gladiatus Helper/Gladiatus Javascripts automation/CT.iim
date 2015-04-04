@@ -1,0 +1,8 @@
+﻿VERSION BUILD=7401110 RECORDER=FX
+TAB T=1
+SET !VAR1 EVAL("Math.floor(Math.random()*3 + 2);")
+SET !VAR2 EVAL("Math.floor(Math.random()*4 + 1);")
+TAG POS=1 TYPE=A ATTR=HREF:http://*/game/index.php?mod=arena&submod=serverArena&aType=3&sh=*
+WAIT SECONDS={{!VAR1}}
+TAG POS={{!VAR2}} TYPE=IMG ATTR=SRC:http://*/game/*/img/fordern.gif
+WAIT SECONDS={{!VAR1}}
